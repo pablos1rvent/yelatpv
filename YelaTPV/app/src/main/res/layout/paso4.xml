@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/label_hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="¡Último paso!" />
+    <TextView
+        android:id="@+id/label_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_hola"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="Inserta un usuario de Administración" />
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_iva"
+        android:layout_weight="1"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Correo" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correo"
+        android:layout_weight="1"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usuario"
+        android:layout_weight="1"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Contraseña" />
+
+    <EditText
+        android:id="@+id/pin1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_weight="1"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="Introducir PIN de acceso" />
+
+    <EditText
+        android:id="@+id/pin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin1"
+        android:layout_weight="1"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="Repetir PIN de acceso" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_finalizar"
+            android:layout_below="@id/pin2"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4AC462"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Finalizar!"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

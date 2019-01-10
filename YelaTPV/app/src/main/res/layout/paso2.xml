@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/label_hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Datos de empresa" />
+
+
+    <EditText
+        android:id="@+id/razonsocial"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_hola"
+        android:ems="10"
+        android:hint="Razón Social" />
+    <EditText
+        android:id="@+id/cifnif"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/razonsocial"
+        android:ems="10"
+        android:hint="CIF/NIF" />
+    <EditText
+        android:id="@+id/direccion"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cifnif"
+        android:ems="10"
+        android:hint="Dirección" />
+    <EditText
+        android:id="@+id/provincia"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/direccion"
+        android:ems="10"
+        android:hint="Provincia" />
+    <EditText
+        android:id="@+id/ciudad"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/provincia"
+        android:ems="10"
+        android:hint="Ciudad" />
+    <EditText
+        android:id="@+id/codpostal"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ciudad"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Código Postal" />
+    <EditText
+        android:id="@+id/telefono"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/codpostal"
+        android:ems="10"
+        android:hint="Teléfono" />
+
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_siguiente_paso2"
+            android:layout_below="@id/telefono"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4AC462"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

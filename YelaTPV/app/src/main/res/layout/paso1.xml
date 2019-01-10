@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/label_hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="Selecciona tu país" />
+
+    <TextView
+        android:id="@+id/label_empecemos"
+        android:layout_below="@id/label_hola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="¡Por ahora solo damos soporte a España!" />
+
+    <Spinner android:id="@+id/paises_combo"
+        android:layout_below="@+id/label_empecemos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_siguiente_paso1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paises_combo"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:text="Siguiente" />
+
+
+
+</RelativeLayout>

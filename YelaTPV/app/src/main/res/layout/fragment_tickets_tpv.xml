@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/vacio_layout"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/logo_yela"
+            android:layout_width="match_parent"
+            android:layout_marginTop="200dp"
+            android:layout_height="128dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/empty"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/label_empecemos"
+            android:layout_below="@id/logo_yela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textColor="#95BCBF"
+            android:text="¡Vaya...!" />
+        <TextView
+            android:id="@+id/label_vamos"
+            android:layout_below="@id/label_empecemos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#95BCBF"
+            android:text="¡Prueba a hacer una venta!" />
+
+    </RelativeLayout>
+</FrameLayout>

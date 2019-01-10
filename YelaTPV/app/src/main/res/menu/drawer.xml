@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/primeraseccion"
+        android:checkableBehavior="single">
+        <item android:id="@+id/dashboard"
+            app:showAsAction="never"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+
+    </group>
+    <group android:id="@+id/segundaseccion"
+        android:checkableBehavior="single">
+        <item android:id="@+id/tpv"
+            app:showAsAction="never"
+            android:icon="@drawable/tpv"
+            android:title="Punto de venta" />
+        <item android:id="@+id/tickets"
+            app:showAsAction="never"
+            android:icon="@drawable/invoice"
+            android:title="Tickets" />
+        <item android:id="@+id/fidelizacion"
+            app:showAsAction="never"
+            android:icon="@drawable/discount"
+            android:title="Fidelización" />
+
+    </group>
+    <group android:id="@+id/terceraseccion"
+        android:checkableBehavior="single">
+        <item android:id="@+id/productogestion"
+            app:showAsAction="never"
+            android:icon="@drawable/barcode"
+            android:title="Productos" />
+        <item android:id="@+id/categoriasgestion"
+            android:icon="@drawable/box"
+            app:showAsAction="never"
+            android:title="Categorías" />
+        <item android:id="@+id/usuariosgestion"
+            app:showAsAction="never"
+            android:icon="@drawable/avatar"
+            android:title="Usuarios" />
+    </group>
+    <group android:id="@+id/cuartaseccion"
+        android:checkableBehavior="single">
+        <item android:id="@+id/miempresa"
+            android:visible="false"
+            app:showAsAction="never"
+            android:icon="@drawable/placeholder"
+            android:title="Mi Empresa" />
+        <item android:id="@+id/ajustes"
+            android:visible="false"
+            android:icon="@drawable/settings"
+            app:showAsAction="never"
+            android:title="Ajustes" />
+        <item android:id="@+id/salir"
+            android:icon="@drawable/switchuser"
+            app:showAsAction="never"
+            android:title="Cambiar de usuario" />
+    </group>
+</menu>

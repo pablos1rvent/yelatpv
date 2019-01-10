@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/label_hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="¡Ya casi hemos terminado!" />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/label_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_hola"
+        android:textSize="18dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="¿Cómo deseas el IVA?" />
+
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:id="@+id/radio_iva"
+        android:layout_below="@+id/label_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/ivaespecifico"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:buttonTint="#fff"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IVA específico para cada producto" />
+
+        <RadioButton
+            android:id="@+id/mismoiva"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:buttonTint="#fff"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="El mismo IVA para los productos" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/iva_porcentaje"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_iva"
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="% IVA" />
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_finalizar"
+            android:layout_below="@id/iva_porcentaje"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4AC462"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

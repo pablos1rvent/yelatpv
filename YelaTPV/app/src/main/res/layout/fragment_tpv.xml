@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:weightSum="100">
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_weight="50"
+        android:id="@+id/ll1"
+        android:padding="10dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+                    <!-- invoice status -->
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop = "3dip"
+                        android:paddingRight = "3dip"
+                        android:paddingLeft = "3dip"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView android:id="@+id/id_ticket"
+                                android:text="Nuevo ticket"
+                                android:padding="3dip" />
+                            <TextView android:id="@+id/fecha_ticket"
+                                android:text="Fecha: 16/05/2018"
+
+                                android:gravity="right"
+                                android:padding="3dip" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- end invoice/client data -->
+                    <!-- invoice items -->
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/lineas_pedido"
+                        android:layout_height="wrap_content"
+                        android:padding = "3dip"
+                        android:stretchColumns="1">
+                        <!-- invoice item labels -->
+                        <TableRow android:background="#E2E2E2">
+                            <TextView android:text="Producto"
+                                android:padding="3dip"
+                                android:textColor = "#090909"
+                                android:textSize = "34px"
+                                android:textStyle = "bold"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView android:text="Precio"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:textColor = "#090909"
+                                android:textSize = "34px"
+                                android:textStyle = "bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView android:text="Uds."
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:textColor = "#090909"
+                                android:textSize = "34px"
+                                android:textStyle = "bold"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+                            <TextView android:text="Totales"
+                                android:gravity="right"
+                                android:padding="3dip"
+                                android:textColor = "#090909"
+                                android:textSize = "34px"
+                                android:textStyle = "bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+                        <!-- end invoice item labels -->
+                        <!-- invoice items
+
+                                                                        <TableRow>
+                                                                            <Button
+                                                                                android:layout_width="15dp"
+                                                                                />
+                                                                            <TextView android:text="Tarta fresa"
+                                                                                android:padding="3dip"
+                                                                                android:textSize = "30px"
+                                                                                android:layout_width="200px" />
+                                                                            <TextView android:text="$30.00"
+                                                                                android:gravity="right"
+                                                                                android:padding="3dip"
+                                                                                android:textSize = "30px"/>
+                                                                            <TextView android:text="116"
+                                                                                android:gravity="right"
+                                                                                android:padding="3dip"
+                                                                                android:textSize = "30px" />
+                                                                            <TextView android:text="$7480.00"
+                                                                                android:gravity="right"
+                                                                                android:padding="3dip"
+                                                                                android:textSize = "30px" />
+                                                                        </TableRow>
+-->
+                                                                        <!-- end invoice items -->
+
+                    </TableLayout>
+                    <!-- end invoice items -->
+
+                    <!-- end invoice buttons -->
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_below="@id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_weight="15"
+        android:id="@+id/home">
+        <ImageButton
+            android:background="@color/colorPrimary"
+            android:layout_width="24dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:id="@+id/home_categorias"
+            android:src="@drawable/home"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_toRightOf="@id/home_categorias"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:id="@+id/migas_categorias"
+            android:text="Categorías"/>
+        <TextView
+            android:layout_toRightOf="@id/migas_categorias"
+            android:visibility="gone"
+            android:id="@+id/migas_productos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" > Productos"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_weight="25"
+        android:id="@+id/ll2">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/categorias_horizontales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll2"
+        android:layout_weight="25"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_codigo_barras"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:backgroundTint="#ffb300"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Escanear Código Barras"/>
+        <Button
+            android:id="@+id/btn_cobrar"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4AC462"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cobrar (0€)"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

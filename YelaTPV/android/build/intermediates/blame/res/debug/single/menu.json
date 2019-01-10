@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/pablosirvent/Library/Mobile Documents/com~apple~CloudDocs/YelaTPV/AplicacionProyecto/android/build/intermediates/res/merged/debug/menu/history.xml",
+        "source": "/Users/pablosirvent/Library/Mobile Documents/com~apple~CloudDocs/YelaTPV/AplicacionProyecto/android/src/main/res/menu/history.xml"
+    },
+    {
+        "merged": "/Users/pablosirvent/Library/Mobile Documents/com~apple~CloudDocs/YelaTPV/AplicacionProyecto/android/build/intermediates/res/merged/debug/menu/encode.xml",
+        "source": "/Users/pablosirvent/Library/Mobile Documents/com~apple~CloudDocs/YelaTPV/AplicacionProyecto/android/src/main/res/menu/encode.xml"
+    },
+    {
+        "merged": "/Users/pablosirvent/Library/Mobile Documents/com~apple~CloudDocs/YelaTPV/AplicacionProyecto/android/build/intermediates/res/merged/debug/menu/capture.xml",
+        "source": "/Users/pablosirvent/Library/Mobile Documents/com~apple~CloudDocs/YelaTPV/AplicacionProyecto/android/src/main/res/menu/capture.xml"
+    }
+]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Nuevo usuario"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/nombreusuario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Nombre de usuario"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Contraseña"
+        android:inputType="textVisiblePassword" />
+    <EditText
+        android:id="@+id/pinacceso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="PIN acceso"
+        android:inputType="numberPassword" />
+    <CheckBox
+        android:id="@+id/esOwner"
+        android:layout_width="wrap_content"
+        android:text="Permisos de administración"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

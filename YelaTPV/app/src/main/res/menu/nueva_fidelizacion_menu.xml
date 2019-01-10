@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/delete_fidelizacion"
+        android:icon="@drawable/garbage"
+        android:visible="false"
+        app:showAsAction="ifRoom"
+        android:title="Attachment"/>
+    <item
+        android:id="@+id/cancel_boton_fidelizacion"
+        android:icon="@drawable/ic_clear_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Attachment"/>
+    <item
+        android:id="@+id/add_boton_fidelizacion"
+        android:icon="@drawable/ic_done_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Attachment"/>
+</menu>

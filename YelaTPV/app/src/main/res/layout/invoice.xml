@@ -1,0 +1,204 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <!-- invoice status -->
+        <TextView android:id="@+id/invoice_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#E2E2E2"
+            android:textColor = "#28AF20"
+            android:textSize = "20px"
+            android:textStyle="bold"
+            android:padding = "10dp"
+            android:text="Paid" />
+        <!-- end invoice status -->
+        <!-- invoice/client data -->
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop = "3dip"
+            android:paddingRight = "3dip"
+            android:paddingLeft = "3dip"
+            android:paddingBottom="24dip"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView android:id="@+id/invoice_id"
+                    android:text="ID: 091010-4"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/invoice_date"
+                    android:text="Date: 09/05/10"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/invoice_client"
+                    android:text="Velocity Concepts"
+                    android:paddingLeft="3dip"
+                    android:textSize = "16px"
+                    android:textStyle = "bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/invoice_address"
+                    android:text="458 Chase Rd"
+                    android:paddingLeft="3dip"
+                    android:textSize = "16px"
+                    android:textStyle = "bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/invoice_region"
+                    android:text="Dartmouth, MA"
+                    android:paddingLeft="3dip"
+                    android:textSize = "16px"
+                    android:textStyle = "bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/invoice_zip"
+                    android:text="02747"
+                    android:paddingLeft="3dip"
+                    android:textSize = "16px"
+                    android:textStyle = "bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+        <!-- end invoice/client data -->
+        <!-- invoice items -->
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding = "3dip"
+            android:stretchColumns="1">
+            <!-- invoice item labels -->
+            <TableRow android:background="#E2E2E2">
+                <TextView android:text="Item"
+                    android:padding="3dip"
+                    android:textColor = "#090909"
+                    android:textSize = "13px"
+                    android:textStyle = "bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="Cost"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor = "#090909"
+                    android:textSize = "13px"
+                    android:textStyle = "bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="Qty"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor = "#090909"
+                    android:textSize = "13px"
+                    android:textStyle = "bold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="Total"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor = "#090909"
+                    android:textSize = "13px"
+                    android:textStyle = "bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <!-- end invoice item labels -->
+            <!-- invoice items -->
+            <TableRow>
+                <TextView android:text="Domain setup and Wordpress Installation"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="$500.00"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="1"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="$500.00"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Wordpress Theming Hours"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="$30.00"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="116"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="$7480.00"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize = "15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <!-- end invoice items -->
+
+        </TableLayout>
+        <!-- end invoice items -->
+        <!-- invoice notes -->
+        <TextView android:text="Notes:"
+            android:paddingLeft="6dip"
+            android:paddingTop="12dip"
+            android:textStyle = "bold"
+            android:textColor="#E2E2E2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:text="Installation of Wordpress, configuration, and theming. Also bought domain, and uploaded videos to youtube account."
+            android:padding="6dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <!-- end invoice notes -->
+        <!-- invoice buttons -->
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+                <Button android:id="@+id/add_credit_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Invoice" />
+                <Button android:id="@+id/add_contact_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payments" />
+            </TableRow>
+        </TableLayout>
+        <!-- end invoice buttons -->
+    </LinearLayout>
+</ScrollView>

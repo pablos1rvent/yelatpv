@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/logo_yela"
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_height="128dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logoyelatpv"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/label_empecemos"
+        android:layout_below="@id/logo_yela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="Iniciar Sesión" />
+    <Spinner
+        android:layout_below="@+id/label_empecemos"
+        android:id="@+id/usuariosspinner"
+        android:gravity="center_horizontal"
+        android:popupBackground="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/usuariosspinner"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="100dp"
+
+            android:id="@+id/campo_pass"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:inputType="numberPassword"
+            android:hint="Código PIN"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/boton_limpiar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_button"
+            android:text="X"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</RelativeLayout>

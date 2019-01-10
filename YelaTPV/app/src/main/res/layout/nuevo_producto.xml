@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Nuevo producto"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:id="@+id/imagen_prod"
+        android:layout_height="32dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/hacerfoto"
+            android:layout_width="48dp"
+            android:src="@drawable/camera"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="Seleccionar imagen"
+            android:id="@+id/selectimage"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Selecciona categoría:"
+        android:textSize="16dp" />
+
+    <com.yelatpv.Principal.MultiSelectionSpinner
+        android:id="@+id/categoriaseleccion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" />
+
+    <EditText
+        android:id="@+id/referenciaunica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Referencia única *"
+        android:inputType="textPersonName" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/barcode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Código de barras"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/barcodescanner"
+            android:layout_width="wrap_content"
+            android:text="Scan"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nombreproducto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Nombre Producto *"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/descripcionproducto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Descripción acerca del producto"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/preciosinimpuestos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Precio sin impuestos *"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/porcentajeimpuestos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="% IMPUESTO *"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:id="@+id/marca"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Nombre de la marca"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/stock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Stock actual *"
+        android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+
+</ScrollView>
